@@ -39,6 +39,12 @@ header ul li a:hover{
 	font-weight:bold;
 	text-decoration:none;
 }
+hr {
+    border: none;
+    height: 2px;
+    color:#2489ce;
+    background-color:#2489ce;
+}
 /*=======================================SECTION bên phải */
 body{
 	background: #f2f2f2;
