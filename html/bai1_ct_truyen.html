@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+    <script src="../thuvien/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="../thuvien/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <script src="../thuvien/jquery-3.3.1.js"></script>
+    <script src="../thuvien/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <link href="../css/style_bai1.css" rel="stylesheet" type="text/css">
+
+    <script src="../jquery/Jquery_bai1.js"></script>
+
+    <script src="../js/js_bai1.js"></script>
+
+    <script src="../jquery/Jquery_bai1_2.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="container">
+            <div style="background:#2489ce;">
+                <!--mo div lon -->
+                <div class="row">
+                    <!-- mo div row-->
+                    <div class="col-sm-4" style="text-align:center;padding-bottom:20px;padding-top:20px;">
+                        <img src="../images/logo.PNG" width="160" height="70" alt="" />
+                    </div>
+
+                    <div class="col-sm-5" style="padding-top:30px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"
+                                        style="height:19px;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3" style="padding-top:20px;">
+                        <ul style="margin-right:20px;" class="nav navbar-nav">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal"><span
+                                        class="glyphicon glyphicon-user"></span> ĐĂNG KÍ</a></li>
+                            <li id="qwe"><a href="#" data-toggle="modal" data-target="#myModal2"><span
+                                        class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP</a></li>
+                        </ul>
+                    </div>
+
+                </div><!-- dong div row-->
+
+            </div><!-- dong div lon -->
+        </header>
+
+        <nav class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+
+                        <li class="active"><a href="../html/bai1_trangchu.html"><img src="../images/icon1.png"
+                                    style="height:20px;padding-right:5px;" />TRANG CHỦ</a></li>
+
+                        <li class="link-1"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img
+                                    src="../images/icon5.png" style="height:20px;padding-right:5px;" />THỂ LOẠI<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" style="background:#f2f2f2;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen1.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Ngôn Tình</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen4.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Kiếm Hiệp</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Truyện Ngắn</a></li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen1.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Truyện Dài</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen2.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Trinh Thám</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Thám hiểm</a></li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen1.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Cổ Đại</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen2.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Kim Dung</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Tiểu Thuyết</a></li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen1.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Thiếu Nhi</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen2.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Xuyên Không</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Kiếm Hiệp</a></li>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ul>
+                        </li>
+
+
+                        <li class="link-1"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img
+                                    src="../images/icon2.png" style="height:20px;padding-right:5px;" />DANH MỤC<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" style="background:#f2f2f2;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen1.html"><span
+                                                        class="glyphicon glyphicon-refresh"></span> Mới Cập Nhật</a>
+                                            </li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen2.html"><span
+                                                        class="glyphicon glyphicon-eye-open"></span> Xem Nhiều</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen6.html"><span
+                                                        class="glyphicon glyphicon-tags"></span> Truyện Hot</a></li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-cloud-upload"></span> Truyện Mới</a>
+                                            </li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen5.html"><span
+                                                        class="glyphicon glyphicon-signal"></span> Truyện Full</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="../html/bai1_truyen3.html"><span
+                                                        class="glyphicon glyphicon-thumbs-up"></span> Yêu Thích</a></li>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ul>
+                        </li>
+
+                        <li class="link-1"><a href="../html/bai1_tacgia1.html"><img src="../images/icon4.png"
+                                    style="height:20px;padding-right:5px;" />TÁC GIẢ</a></li>
+
+                        <li class="link-1"><a href="../html/bai1_lienhe.html"><img src="../images/icon3.png"
+                                    style="height:20px;padding-right:5px;" />LIÊN HỆ</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </nav>
+
+        <section class="container">
+
+            <div class="row">
+                <!--mo di row lon-->
+                <div class="col-sm-9">
+                    <!--mo div col -->
+
+                    <div class="panel panel-default">
+                        <!-- mo panner tieu de slide-->
+                        <div class="panel-body" style="font-size:12px;padding-bottom:10px;">
+                            <!--mo panel body-->
+
+                            <div class="row">
+
+                                <div class="col-sm-3">
+                                    <img src="../images/chitiet1.jpg" />
+                                </div>
+
+                                <div class="col-sm-9">
+                                    <span>
+                                        <br>
+                                        <p style="color:#2489ce;font-size:22px;font-weight:bold;">Cô Vợ Nhỏ Ôn Tồn Của
+                                            Trung Tá</p>
+                                        <p style="font-size:14px;">Tác Giả: <a href="#">Lư Quán Đình</a></p>
+                                        <p style="font-size:14px;">Thể Loại: <a href="#">Ngôn Tình</a></p>
+                                        <button type="button" class="btn btn-warning"
+                                            style="line-height:30px;margin-bottom:15px;color:#000000;font-weight:bold;">ĐỌC
+                                            TRUYỆN</button><br>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:15px;">THÊM
+                                            VÀO TỦ TRUYỆN</button><br>
+                                        <button type="button" class="btn btn-primary" style="line-height:11px;"><a
+                                                href="#"><img src="../images/like.png" style="height:11px;"><span
+                                                    style="color:#FFF;font-weight:bold;font-size:11px">
+                                                    Like</span></a><br></button>
+                                        <button type="button" class="btn btn-primary" style="line-height:11px;"><span
+                                                style="color:#FFF;font-weight:bold;font-size:11px">share</span></a><br></button>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="row" style="border-top:1px solid #636161;margin-top:20px;text-align:center;">
+                                <img src="../images/chitiet2.jpg" style="padding-top:20px;height:80%;width:60%;" />
+                            </div>
+
+                            <div class="row" style="padding:20px;font-size:18px;">
+                                <p style="font-weight:bold;">Trích Đoạn:</p>
+                                <p style="text-indent:1.5cm;">Kha Trạch Liệt rốt cục không chịu nổi ánh mắt ấy của Hoàng
+                                    Thần, cuối cùng từ kẽ răng nghiến ra mấy chữ, nhìn rất rõ anh đang nhẫn nại đến cực
+                                    hạn: "Cậu không biết bay qua à!"</p>
+
+                                <p style="text-indent:1.5cm;">Hừ, lão tử nhìn phụ nữ YY mà cũng quấy rầy, coi chừng tôi
+                                    cho cậu cả đời ngậm miệng! Kha Trạch Liệt trừng mắt nhìn Hoàng Thần, cũng không thèm
+                                    nhìn tai nạn xe cộ cách đó không xa ở phía trước, hai chiếc xa Lamborghini tông vào
+                                    nhau, xe cảnh sát cũng dừng ở một bên, ba chiếc xe vừa đúng làm ùm tắc con đường
+                                    nhỏ. Một người đầu trọc mang theo chiếc kính râm với bộ mặt vô lại hay tay đút vào
+                                    túi quần một bộ dáng không thèm để ý, trên khuôn mặt đều là sự khinh thường đối với
+                                    mọi chuyện đang diễn ra.</p>
+
+                                <p style="text-indent:1.5cm;">Hoàng Thần cười khổ một tiếng, tựa hồ chỉ có thể phi qua
+                                    thôi. Đồ điểu cáng, biến thái!. . . </p>
+
+                                <p style="text-indent:1.5cm;">"Lão đại, ngày mai . . . . " Nhìn cái cua quẹo phía trước,
+                                    Hoàng Thần nhịn không được mở miệng. Đôi mắt ánh lên nét cười, một chút cũng không
+                                    áy náy khi quấy rầy người khác tìm thú vui, nụ cười tà mị luôn ẩn hiện bên khóe
+                                    miệng.</p>
+
+                                <p style="text-indent:1.5cm;">Kha Trạch Liệt lườm hắn một cái, thản nhiên nói như không
+                                    quan tâm đến ý đồ của tên bạn thân này: "Hừm, chuyện của ngày mai, ngày mai hãy nói!
+                                    Chuyện không quan trọng đừng làm phiền lão tử!"</p>
+
+                                <p style="text-indent:1.5cm;">Chiếc xe nhanh chóng dùng lại, thân thể nhanh chóng mở cửa
+                                    xe, nhếch môi cười một tiếng: "Lão đại, chúc anh vui vẻ, tiết chế một chút, người ta
+                                    còn nhỏ. . . . ." Vừa dứt lời, Hoàng Thần thông minh nhanh chóng nhấn ra, chuồn mất.
+                                </p>
+                                <button type="button" class="btn btn-warning"
+                                    style="line-height:30px;margin-bottom:15px;color:#000000;font-weight:bold;">ĐỌC
+                                    TRUYỆN</button><br>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="detailBox">
+                                    <div class="titleBox">
+                                        <label>Add Comment</label>
+                                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    </div>
+
+                                    <div class="actionBox">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="../images/meo1.jpg" />
+                                                </div>
+                                                <div class="commentText">
+                                                    <p class="">Truyện Rất Hay :)))))))</p> <span
+                                                        class="date sub-text">on March 5th, 2018</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="../images/meo4.jpg" />
+                                                </div>
+                                                <div class="commentText">
+                                                    <p class="">Web Dạo Này Sao lag Thế ???</p> <span
+                                                        class="date sub-text">on March 5th, 2018</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="../images/meo5.jpg" />
+                                                </div>
+                                                <div class="commentText">
+                                                    <p class=""></p>Có Bạn Nào Biết Truyện Nào Hay Giống Vậy K ??? <span
+                                                        class="date sub-text">on March 5th, 2018</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="../images/meo2.jpg" />
+                                                </div>
+                                                <div class="commentText">
+                                                    <p class="">Sao Không Xem Được Admin Ơi !!!!!</p> <span
+                                                        class="date sub-text">on March 3th, 2017</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="../images/meo3.jpg" />
+                                                </div>
+                                                <div class="commentText">
+                                                    <p class="">Có Bạn Nào Biết Bài Này Cô Cho Mấy Điểm Không ???</p>
+                                                    <span class="date sub-text">on March 5th, 2018</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <form class="form-inline" role="form">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Your comments" />
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-default">Add</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="ScrollToTop"><img alt="Back to top" src="../images/up.png" /></div>
+
+                </div>
+                <!--dong div col-->
+                <div class="col-sm-3">
+                    <!--mo div col -->
+                    <div class="m3" style="margin-bottom:20px;">
+
+                        <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2">
+                                MỚI CẬP NHẬT</span></div>
+                        <div>
+                            <img name="image" src="../images/h1.jpg" alt="" style="width:100%;height:340px;">
+                        </div>
+                    </div>
+
+
+                    <div class="m3">
+
+                        <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2">
+                                CHUYÊN MỤC</span></div>
+                        <div class="m4">
+                            <ul class="nav navbar">
+                                <li><a href="#">Truyện Ngôn Tình</a></li>
+                                <li><a href="#">Truyện Teen</a></li>
+                                <li><a href="#">Xuyên Không</a></li>
+                                <li><a href="#">Quan Trường</a></li>
+                                <li><a href="#">Truyện VOZ</a></li>
+                                <li><a href="#">Truyện Kiếm Hiệp</a></li>
+                                <li><a href="#">Truyện Tiên Hiệp</a></li>
+                                <li><a href="#">Truyện Ngắn</a></li>
+                                <li><a href="#">Tiểu Thuyết</a></li>
+                                <li><a href="#">Trinh Thám</a></li>
+                                <li><a href="#">Huyền Huyễn</a></li>
+                                <li><a href="#">Võng Du</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="m3">
+                        <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2">
+                                NGÔN TÌNH HAY</span></div>
+
+                        <div class="m4">
+                            <ul class="nav navbar">
+                                <li><a href="#">Ngôn Tình Hiện Đại</a></li>
+                                <li><a href="#">Ngôn Tình Cổ Đại</a></li>
+                                <li><a href="#">Ngôn Tình Hài</a></li>
+                                <li><a href="#">Ngôn Tình Huyền Huyễn</a></li>
+                                <li><a href="#">Ngôn Tình Cấm Luyến</a></li>
+                                <li><a href="#">Ngôn Tình Sư Đồ Luyến</a></li>
+                                <li><a href="#">Thanh Mai Trúc Mã</a></li>
+                                <li><a href="#">Ngôn Tình Sủng</a></li>
+                                <li><a href="#">Ngôn Tình Ngược</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--dong div col-->
+
+            </div><!-- dong div row lon-->
+            <div style="background:#333;">
+                <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                    <div class="col-sm-3" style="text-align:center;">
+                        <img src="../images/logo2.png" style="border:1px solid #333;">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <span style="color:#FFFFFF;font-family:'Arial';font-size:11px;">
+                            <p>Bài Tập Lớn<br>
+                                Môn: hệ Thống Và Công Nghệ Web<br>
+                                Giáo Viên Hướng Dẫn: Đặng Thị Thu Hà<br>
+                                Sinh Viên Thực hiện: Phan Thiên Nhân Sinh_16033231 + Từ Quốc Hưng_16036901</p>
+                        </span>
+                    </div>
+
+                    <div class="col-sm-3" style="padding-top:10px;">
+                        <img src="../images/twiter.png" style="border:1px solid #333;">
+                        <img src="../images/google.png" style="border:1px solid #333;">
+                        <img src="../images/facebook.png" style="border:1px solid #333;">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+</body>
+
+</html>
+<!----------------------model dang nhap----------->
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:#2489ce;font-weight:bold;"><img src="../images/dangnhap.png"
+                            style="height:30px;padding-right:10px;padding-bottom:5px;">THÀNH VIÊN</h4>
+
+                </div>
+
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Email:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="emaildn" placeholder="Enter email">
+                                <span id="loi11" style="color:#FF0004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Password:</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="passdn" placeholder="Enter password">
+                                <span id="loi12" style="color:#FF0004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <a href="#"> Quên Mật Khẩu ?</a>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer" style="text-align:center;">
+                    <button id="btnhuy" data-dismiss="modal"
+                        style="height:30px;width:50px;border-radius:5px;">Huỷ</button>
+                    <button id="btndn" style="height:30px;width:100px;border-radius:5px;">Đăng Kí</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-------------------------model dang ki-->
+<div class="container">
+    <!-- Modal dang ki-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:#2489ce;font-weight:bold;"><img src="../images/dangki.png"
+                            style="height:30px;padding-right:10px;">ĐĂNG KÍ THÀNH VIÊN</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Họ Tên:</label>
+                            <div class="col-sm-9">
+                                <input type="textfeild" class="form-control" id="txthoten" placeholder="Enter Name">
+                                <span id="loi" style="color:#FF0004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Giới Tính:</label>
+                            <div class="col-sm-9">
+                                <div class="radio">
+                                    <label><input type="radio" name="gioitinh" value="nam">Nam</label>
+                                    <label><input type="radio" name="gioitinh" value="nu">Nữ</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Ngày Sinh</label>
+                            <div class="col-sm-3">
+                                <select class="form-control" id="sel1">
+                                    <script>
+                                        for (var i = 1; i <= 31; i++) {
+                                            document.write("<option>" + i + "</option>");
+                                        }
+                                    </script>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <select class="form-control" id="sel2">
+                                    <script>
+                                        for (var i = 1; i <= 12; i++) {
+                                            document.write("<option>" + i + "</option>");
+                                        }
+                                    </script>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <select class="form-control" id="sel3">
+                                    <script>
+                                        for (var i = 1900; i <= 2018; i++) {
+                                            document.write("<option>" + i + "</option>");
+                                        }
+                                    </script>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Email:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                <span id="loi1" style="color:#F70004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Password:</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="pass1" placeholder="Enter password">
+                                <span id="loi2" style="color:#F70004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="pwd">Nhập Lại Pass:</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="pass2" placeholder="Enter password">
+                                <span id="loi3" style="color:#F70004;"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer" style="text-align:center;">
+                    <button id="btnhuy" data-dismiss="modal"
+                        style="height:30px;width:50px;border-radius:5px;">Huỷ</button>
+                    <button id="btndk" style="height:30px;width:100px;border-radius:5px;">Đăng Kí</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--dong model dang ki-->
+
+</div>

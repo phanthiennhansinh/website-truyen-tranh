@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+ <script src="../thuvien/jquery-3.3.1.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  
+  <link rel="stylesheet" href="../thuvien/bootstrap-3.3.7/dist/css/bootstrap.min.css"> 
+  <script src="../thuvien/jquery-3.3.1.js"></script>
+  <script src="../thuvien/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+  
+  <link href="../css/style_bai1.css" rel="stylesheet" type="text/css">
+  
+  <script src="../jquery/Jquery_bai1.js"></script>
+  
+  <script src="../js/js_bai1.js"></script>
+ 
+  <script src="../jquery/Jquery_bai1_2.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+<header class="container">
+	<div style="background:#2489ce;" ><!--mo div lon -->
+		<div class="row"><!-- mo div row-->
+              <div class="col-sm-4" style="text-align:center;padding-bottom:20px;padding-top:20px;">
+                <img src="../images/logo.PNG" width="160" height="70" alt="" />
+              </div>
+          
+              <div class="col-sm-5" style="padding-top:30px;">
+                      <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                      	    <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search" style="height:19px;"></i></button>
+                        	</div>
+                      </div>
+              </div>
+          
+              <div class="col-sm-3" style="padding-top:20px;">
+                    <ul style="margin-right:20px;" class="nav navbar-nav">
+                      <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> ĐĂNG KÍ</a></li>
+                      <li id="qwe"><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-log-in"></span> ĐĂNG NHẬP</a></li>
+                    </ul>         
+              </div>
+        
+        </div><!-- dong div row-->
+
+   </div><!-- dong div lon -->    
+</header>
+
+<nav class="container">
+        	<nav class="navbar navbar-inverse">
+                  <div class="container" >
+                    	<ul class="nav navbar-nav">
+                      
+                      		<li class="active"><a href="../html/bai1_trangchu.html" ><img src="../images/icon1.png" style="height:20px;padding-right:5px;"/>TRANG CHỦ</a></li>
+                      
+                     		<li class="link-1"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../images/icon5.png" style="height:20px;padding-right:5px;"/>THỂ LOẠI<span class="caret"></span></a>
+                        		<ul class="dropdown-menu" style="background:#f2f2f2;">
+                                	<table>
+                                    	<tr>
+                                        	<td><li><a href="../html/bai1_truyen1.html"><span class="glyphicon glyphicon-tags"></span> Ngôn Tình</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen4.html"><span class="glyphicon glyphicon-tags"></span> Kiếm Hiệp</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-tags"></span> Truyện Ngắn</a></li></td>
+                                        </tr>
+                                        <tr>
+                                        	<td><li><a href="../html/bai1_truyen1.html"><span class="glyphicon glyphicon-tags"></span> Truyện Dài</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen2.html"><span class="glyphicon glyphicon-tags"></span> Trinh Thám</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-tags"></span> Thám hiểm</a></li></td>
+                                        </tr>
+                                        <tr>
+                                        	<td><li><a href="../html/bai1_truyen1.html"><span class="glyphicon glyphicon-tags"></span> Cổ Đại</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen2.html"><span class="glyphicon glyphicon-tags"></span> Kim Dung</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-tags"></span> Tiểu Thuyết</a></li></td>
+                                        </tr>
+                                        <tr>
+                                        	<td><li><a href="../html/bai1_truyen1.html"><span class="glyphicon glyphicon-tags"></span> Thiếu Nhi</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen2.html"><span class="glyphicon glyphicon-tags"></span> Xuyên Không</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-tags"></span> Kiếm Hiệp</a></li></td>
+                                        </tr>
+                                    </table>	
+                          		</ul>
+                      		</li>
+                      		
+                            
+                            <li class="link-1"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../images/icon2.png" style="height:20px;padding-right:5px;"/>DANH MỤC<span class="caret"></span></a>
+                        		<ul class="dropdown-menu" style="background:#f2f2f2;">
+                                	<table>
+                                    	<tr>
+                                        	<td><li><a href="../html/bai1_truyen1.html"><span class="glyphicon glyphicon-refresh"></span> Mới Cập Nhật</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen2.html"><span class="glyphicon glyphicon-eye-open"></span> Xem Nhiều</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen6.html"><span class="glyphicon glyphicon-tags"></span> Truyện Hot</a></li></td>
+                                        </tr>
+                                        <tr>
+                                        	<td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-cloud-upload"></span> Truyện Mới</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen5.html"><span class="glyphicon glyphicon-signal"></span> Truyện Full</a></li></td>
+                                            <td><li><a href="../html/bai1_truyen3.html"><span class="glyphicon glyphicon-thumbs-up"></span> Yêu Thích</a></li></td>
+                                        </tr>         
+                                    </table>	
+                          		</ul>
+                      		</li>
+                            
+                      		<li class="link-1"><a href="../html/bai1_tacgia1.html"><img src="../images/icon4.png" style="height:20px;padding-right:5px;"/>TÁC GIẢ</a></li>
+                            
+                            <li class="link-1"><a href="../html/bai1_lienhe.html"><img src="../images/icon3.png" style="height:20px;padding-right:5px;"/>LIÊN HỆ</a></li>
+                    	</ul>
+                        
+                 </div>
+           </nav>
+</nav>
+
+<section class="container">
+		
+            <div class="row"><!--mo di row lon-->
+                <div class="col-sm-9"><!--mo div col -->
+                                	
+                    <div class="panel panel-default"><!-- mo panner tieu de slide-->
+                     	<div class="panel-heading" style="color:#2489ce;font-weight:bold;font-size:20px;"><span class="glyphicon glyphicon-th-list" style="padding-right:10px;"></span><span>TRUYỆN TRINH THÁM</span></div>
+                        <div class="panel-body" style="font-size:12px;padding-bottom:80px;"><!--mo panel body-->
+                            
+        						<span  stt="0" class="slide"><!--mo slide 1-->
+                                	<div class="row" style="margin-bottom:20px;">
+                                        <div class="col-sm-3">
+                                            
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 87.839
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 6.373.212
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Vợ Yêu Xinh Đẹp Của Tổng Giám Đốc Tàn Ác" class="maintop-img2"  src="../images/hinh9.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                                </a>
+                                        	</div>
+                                        	<div><a href="#" class="todam">Vợ Yêu Xinh Đẹp Của Tổng Giám Đốc Tàn Ác</a></div>
+                                        	<div>Tác giả: <a href="#">Tạ Thiên Thu</a></div>
+                                        	<div>93 chương | <span class="todo">Full</span></div>
+                           				</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 8.738.273
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 121.212
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                           	 	<img title="Giây Phút Ta Được Ở Bên Nhau" class="maintop-img2"  src="../images/hinh10.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                           	             	</div>             
+                                        	<div><a href="#" class="todam">Giây Phút Ta Được Ở Bên Nhau</a></div>
+                                        	<div>Tác giả: <a href="#">Lý Tố Tố</a></div>
+                                        	<div>45 chương | <span class="todo">Full</span></div>
+                           					</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 12.019
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 12.212
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Chúng Ta" class="maintop-img2"  src="../images/hinh11.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                          	            	</div>            
+                                        	<div><a href="#" class="todam">Chúng Ta</a></div>
+                                        	<div>Tác giả: <a href="#">Tân Di Ổ</a></div>
+                                        	<div>232 chương | <span class="todo">Full</span></div>
+                           				</div>		
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 2.912.019
+                                               		<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 121.212
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Thiếu Tướng Ê Vợ" class="maintop-img2"  src="../images/hinh12.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                                        	</div> 
+                                        	<div><a href="#" class="todam">Thiếu Tướng Ế Vợ</a></div>
+                                        	<div>Tác giả: <a href="#">Điệp Thu Hương</a></div>
+                                        	<div>323 chương | <span class="todo">Full</span></div>
+                           				</div>	
+                                        	
+                            	</div>	
+                                   
+                            </span><!--dong slide 1-->	                 
+		                            
+                            <span  stt="1" class="slide"><!--mo slide 2-->
+                            		<div class="row" style="margin-bottom:20px;">
+                                        
+                                        <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 3.473
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 12.112
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Năm Tháng Ấm Áp Của Chúng Ta" class="maintop-img2"  src="../images/hinh5.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                                </a>
+                                        	</div>
+                                        	<div><a href="#" class="todam">Năm Tháng Ấp Áp Của Chúng Ta</a></div>
+                                        	<div>Tác giả: <a href="#">Trung Hán Siêu</a></div>
+                                        	<div>525 chương | <span class="todo">Full</span></div>
+                           				</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 19.218
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 989
+                                           	 	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Hoàng Tử Bé" class="maintop-img2"  src="../images/hinh6.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                                        	</div>             
+                                        	<div><a href="#" class="todam">Hoàng Tử Bé</a></div>
+                                        	<div>Tác giả: <a href="#">Cẩm Dương Thiên</a></div>
+                                        	<div>5 chương | <span class="todo">Full</span></div>
+                           				</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 98.990
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 12.909
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Giây Phút Này Thuộc Về Hai Ta" class="maintop-img2"  src="../images/hinh7.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                          	            	</div>            
+                                        	<div><a href="#" class="todam">Giây Phút Này Thuộc Về Hai Ta</a></div>
+                                        	<div>Tác giả: <a href="#">Hạ Tuyết Duyên</a></div>
+                                        	<div>12 chương | <span class="todo">Full</span></div>
+                           				</div>		
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 891.981
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 9.898
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Đất Rồng" class="maintop-img2"  src="../images/hinh8.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                                        	</div> 
+                                        	<div><a href="#" class="todam">Đất Rồng</a></div>
+                                        	<div>Tác giả: <a href="#">Tạ Đình Phong</a></div>
+                                        	<div>76 chương | <span class="todo">Full</span></div>
+                           				</div>	
+                                        	
+                            	</div>		
+                            </span><!--dong slide 2-->			
+                            
+                            <span  stt="2" class="slide"><!--mo slide 3-->
+                            			 
+                            </span><!--dong slide 3-->
+                            
+                            <span  stt="3" class="slide"><!--mo slide 4-->
+                            
+                                 <div class="row" style="margin-bottom:20px;"> <!--mo dong 1-->                        
+                                    <div class="col-sm-3">
+                                        <div class="maintop-div2" style=" position: relative;">
+                                            <p class="maintop-p2" >
+                                                <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 342.019
+                                                <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 1.212
+                                            </p>
+                                            <a href="#" class="lammoanh">
+                                            <img title="Cành Vàng Lá Ngọc" class="maintop-img2"  src="../images/nt1.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            </a>
+                                        </div>
+                                            <div><a href="#" class="todam">Cành Vàng Lá Ngọc</a></div>
+                                            <div>Tác giả: <a href="#">La Thoại Thoại</a></div>
+                                            <div>98 chương | <span class="todo">Full</span></div>
+                                    </div>	
+                                   
+                                   <div class="col-sm-3">
+                                        <div class="maintop-div2" style=" position: relative;">
+                                            <p class="maintop-p2" >
+                                                <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 563.443
+                                                <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 254.523
+                                            </p>
+                                            <a href="#" class="lammoanh">
+                                            <img title="Con Dâu Danh Môn Nuôi Từ Nhỏ" class="maintop-img2"  src="../images/nt2.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px;">
+                                            </a>
+                                        </div>     
+                                            <div><a href="#" class="todam">Con Dâu Danh Môn Nuôi Từ Nhỏ</a></div>
+                                            <div>Tác giả: <a href="#">Diệp Lạc Vô Tâm</a></div>
+                                            <div>67 chương | <span class="todo">Full</span></div>
+                                   </div>	
+                                   
+                                   <div class="col-sm-3">
+                                        <div class="maintop-div2" style=" position: relative;">
+                                            <p class="maintop-p2" >
+                                                <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 29.434
+                                                <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 4.325.454
+                                            </p>
+                                            <a href="#" class="lammoanh">
+                                            <img title="Cô Vợ Nhỏ Ôn Tồn Của Trung Tá" class="maintop-img2"  src="../images/nt3.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px;">
+                                            </a>
+                                        </div>
+                                        
+                                        <div><a href="#" class="todam">Cô Vợ Nhỏ Ôn Tồn Của Trung Tá</a></div>
+                                        <div>Tác giả: <a href="#">Tác Không Không</a></div>
+                                        <div>23 chương | <span class="todo">Full</span></div>
+                                   </div>	
+                                   
+                                   <div class="col-sm-3">
+                                        <div class="maintop-div2" style=" position: relative;">
+                                            <p class="maintop-p2" >
+                                                <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 76.762
+                                                <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 452.454
+                                            </p>
+                                            <a href="#" class="lammoanh">
+                                            <img title="Ê Thằng Con Nhà Người Ta" class="maintop-img2"  src="../images/nt4.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px">
+                                            </a>
+                                        </div>      
+                                            <div><a href="#" class="todam">Ê Thằng Con Nhà Người Ta</a></div>
+                                            <div>Tác giả: <a href="#">Tào Đình</a></div>
+                                            <div>95 chương | <span class="todo">Full</span></div>
+                                   </div> 
+                                 </div><!--dong dong 1-->
+                          	</span>
+                            	 <div class="row" style="margin-bottom:20px;">
+                                        
+                                        <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 2.912.019
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 121.212
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Sổ Tay Yêu Đương Của Người Sói" class="maintop-img2"  src="../images/hinh1.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                                </a>
+                                        	</div>
+                                        	<div><a href="#" class="todam">Sổ Tay Yêu Đương Của Người Sói</a></div>
+                                        	<div>Tác giả: <a href="#">Cẩm Dương Thiên</a></div>
+                                        	<div>55 chương | <span class="todo">Full<span></div>
+                           				</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 294.249
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 4.534
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                           		                <img title="Thế Giới Có Chứt Ngọt" class="maintop-img2"  src="../images/hinh2.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                                        	</div>             
+                                        	<div><a href="#" class="todam">Thế Giới Có Chút Ngọt</a></div>
+                                       		<div>Tác giả: <a href="#">Lư Quán Đình</a></div>
+                                        	<div>121 chương | <span class="todo">Full</span></div>
+                           				</div>
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 22.198
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 1.899
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Béo Mới Là Đẹp" class="maintop-img2"  src="../images/hinh3.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                                            	</a>
+                          	            	</div>            
+                                        	<div><a href="#" class="todam">Béo Mới Là Đẹp</a></div>
+                                        	<div>Tác giả: <a href="#">Lâm Tâm Như</a></div>
+                                        	<div>509 chương | <span class="todo">Full</span></div>
+                           				</div>		
+                                        
+                                        <div class="col-sm-3">
+                                        	<div class="maintop-div2" style=" position: relative;">
+                                            	<p class="maintop-p2" >
+                                                	<i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 54.019
+                                                	<i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 1.212
+                                            	</p>
+                                            	<a href="#" class="lammoanh">
+                                            	<img title="Đừng Chạy Lão Sư" class="maintop-img2"  src="../images/hinh4.jpg" style="display:inline;width:100%;height:250px;margin-bottom:5px;">
+                             	               	</a>
+                                        	</div> 
+                                        	<div><a href="#" class="todam">Đừng Chạy Lão Sư</a></div>
+                                        	<div>Tác giả: <a href="#">La Mỹ Hân</a></div>
+                                        	<div>12 chương | <span class="todo">Full</span></div>
+                           				</div>	
+                                        	
+                            	</div>	
+                            
+                            <span  stt="4" class="slide"><!--mo slide 5-->
+                            
+                                        <div class="row" style="margin-bottom:20px;"><!--mo dong 2-->
+                                       <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 545.762
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 4.454
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Hồ Sơ Số 113" class="maintop-img2"  src="../images/tt1.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px">
+                                                </a>
+                                            </div>      
+                                                <div><a href="#" class="todam">Hồ Sơ Số 113</a></div>
+                                                <div>Tác giả: <a href="#">Trần Trọng Thủy</a></div>
+                                                <div>21 chương | <span class="todo">Full</span></div>
+                                       </div>
+                                       
+                                       <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 434.521
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 65.765
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Kẻ Tình Nghi" class="maintop-img2"  src="../images/tt2.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px">
+                                                </a>
+                                            </div>      
+                                                <div><a href="#" class="todam">Kẻ Tình Nghi</a></div>
+                                                <div>Tác giả: <a href="#">Lý Dịch Phong</a></div>
+                                                <div>43 chương | <span class="todo">Full</span></div>
+                                       </div>
+                                       
+                                       <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 2.546
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 4.756.537
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Chuyện Không Công Bố Của sherlock Homles" class="maintop-img2"  src="../images/tt3.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px">
+                                                </a>
+                                            </div>      
+                                                <div><a href="#" class="todam">Chuyện Không Công Bố Của sherlock Homles</a></div>
+                                                <div>Tác giả: <a href="#">Trần Kiều Ân</a></div>
+                                                <div>215 chương | <span class="todo">Full</span></div>
+                                       </div>
+                                       
+            
+            
+                                       <div class="col-sm-3">
+                                            <div class="maintop-div2" style=" position: relative;">
+                                                <p class="maintop-p2" >
+                                                    <i class="glyphicon glyphicon-eye-open" style="font-size:11px;"></i> 23.524
+                                                    <i class="glyphicon glyphicon-heart" style="font-size:11px;"></i> 3.583.865
+                                                </p>
+                                                <a href="#" class="lammoanh">
+                                                <img title="Chiếc Váy Hoa Bị Xé" class="maintop-img2"  src="../images/tt4.jpg" style="display: inline;width:100%;height:250px;margin-bottom:5px">
+                                                </a>
+                                            </div>      
+                                                <div><a href="#" class="todam">Chiếc Váy Hoa Bị Xé</a></div>
+                                                <div>Tác giả: <a href="#">Lý Nhược Đồng</a></div>
+                                                <div>95 chương | <span class="todo">Full</span></div>
+                                       </div>	       
+                                    </div><!--dong dong 2-->
+                              </span>
+                            
+                      
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                    	<div id="phantrangtruyen">
+                              <ul class="pagination">
+                                <li><a href="../html/bai1_truyen1.html" id="tacgiaprev"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                                <li><a href="../html/bai1_truyen1.html">1</a></li>
+                                <li class="active"><a href="../html/bai1_truyen2.html">2</a></li>
+                                <li><a href="../html/bai1_truyen3.html">3</a></li>
+                                <li><a href="../html/bai1_truyen3.html" id="tacgianext"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                              </ul>
+                        </div>
+                   </div>	
+
+                       
+                  <div id="ScrollToTop"><img alt="Back to top" src="../images/up.png"/></div>
+                 
+                </div><!--dong div col-->
+                <div class="col-sm-3"><!--mo div col -->
+                		<div class="m3" style="margin-bottom:20px;">
+                        
+                                 <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2"> MỚI CẬP NHẬT</span></div>      
+                                 <div>
+                                   		<img  name="image" src="../images/h1.jpg" alt="" style="width:100%;height:340px;">              
+                                 </div>
+                        </div>
+                	
+        
+                        <div class="m3">
+
+                                <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2"> CHUYÊN MỤC</span></div>        
+                                <div class="m4">
+                                    <ul class="nav navbar">
+                                      <li><a href="#">Truyện Ngôn Tình</a></li>
+                                      <li><a href="#">Truyện Teen</a></li>
+                                      <li><a href="#">Xuyên Không</a></li>
+                                      <li><a href="#">Quan Trường</a></li>
+                                      <li><a href="#">Truyện VOZ</a></li>
+                                      <li><a href="#">Truyện Kiếm Hiệp</a></li>
+                                      <li><a href="#">Truyện Tiên Hiệp</a></li>
+                                      <li><a href="#">Truyện Ngắn</a></li>
+                                      <li><a href="#">Tiểu Thuyết</a></li>
+                                      <li><a href="#">Trinh Thám</a></li>
+                                      <li><a href="#">Huyền Huyễn</a></li>
+                                      <li><a href="#">Võng Du</a></li>
+                                    </ul>               
+                                 </div>
+                        </div>
+                        
+                        <div class="m3">
+                                <div class="m1"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;<span class="m2"> NGÔN TÌNH HAY</span></div>
+                                      
+                                 <div class="m4">
+                                    <ul class="nav navbar">
+                                      <li><a href="#">Ngôn Tình Hiện Đại</a></li>
+                                      <li><a href="#">Ngôn Tình Cổ Đại</a></li>
+                                      <li><a href="#">Ngôn Tình Hài</a></li>
+                                      <li><a href="#">Ngôn Tình Huyền Huyễn</a></li>
+                                      <li><a href="#">Ngôn Tình Cấm Luyến</a></li>
+                                      <li><a href="#">Ngôn Tình Sư Đồ Luyến</a></li>
+                                      <li><a href="#">Thanh Mai Trúc Mã</a></li>
+                                      <li><a href="#">Ngôn Tình Sủng</a></li>
+                                      <li><a href="#">Ngôn Tình Ngược</a></li>
+                                    </ul>               
+                                 </div>
+                        </div>
+          
+        
+              		</div><!--dong div col-->
+					
+              </div><!-- dong div row lon-->
+              <div style="background:#333;">  
+                    <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                        <div class="col-sm-3" style="text-align:center;">
+                            <img src="../images/logo2.png" style="border:1px solid #333;">
+                        </div>
+                        
+                        <div class="col-sm-6" style="padding-left:30px;">
+                            <span style="color:#FFFFFF;font-family:'Arial';font-size:11px;">
+                                    <p>Bài Tập Lớn<br>
+                                       Môn: hệ Thống Và Công Nghệ Web<br>
+                                       Giáo Viên Hướng Dẫn: Đặng Thị Thu Hà<br>
+                                       Sinh Viên Thực hiện: Phan Thiên Nhân Sinh_16033231 + Từ Quốc Hưng_16036901</p>
+                            </span>
+                        </div>
+                        
+                        <div class="col-sm-3" style="padding-top:10px;padding-left:30px;">
+                            <img src="../images/twiter.png" style="border:1px solid #333;">
+                            <img src="../images/google.png" style="border:1px solid #333;">
+                            <img src="../images/facebook.png" style="border:1px solid #333;">
+                        </div>
+                    </div>    
+               
+                </div>
+                
+                
+</section>
+
+								
+ </div>
+       </body>
+</html>
+<!----------------------model dang nhap----------->
+<div class="container">
+  <!-- Modal -->
+  	<div class="modal fade" id="myModal2" role="dialog">
+    	<div class="modal-dialog">
+    
+     	<!-- Modal content-->
+      	<div class="modal-content">
+        	<div class="modal-header">
+        		<h4 class="modal-title" style="color:#2489ce;font-weight:bold;"><img src="../images/dangnhap.png" style="height:30px;padding-right:10px;padding-bottom:5px;">THÀNH VIÊN</h4>
+      
+        	</div>
+        	
+            <div class="modal-body">
+            		<form class="form-horizontal" action="/action_page.php" >
+            			<div class="form-group">
+               	  			<label class="control-label col-sm-3" for="email">Email:</label>
+                        		<div class="col-sm-9">
+                          			<input type="email" class="form-control" id="emaildn" placeholder="Enter email">
+                                  <span id="loi11" style="color:#FF0004;"></span>
+                       			</div>
+                  		</div>
+                    
+                      	<div class="form-group">
+                        	<label class="control-label col-sm-3" for="pwd">Password:</label>
+                        	<div class="col-sm-9"> 
+                          		<input type="password" class="form-control" id="passdn" placeholder="Enter password">
+                                <span id="loi12" style="color:#FF0004;"></span>
+                        	</div>
+                      	</div>
+                        
+                        <div class="form-group"> 
+                        	<div class="col-sm-offset-3 col-sm-9">
+                          		<a href="#"> Quên Mật Khẩu ?</a>
+                        	</div>
+                      	</div>
+                     
+                     </form>
+          		
+        	</div>
+        	
+            <div class="modal-footer" style="text-align:center;">
+          		<button id="btnhuydn" data-dismiss="modal" style="height:30px;width:50px;border-radius:5px;">Huỷ</button>
+                <button id="btndn" style="height:30px;width:100px;border-radius:5px;">Đăng Kí</button>
+        	</div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-------------------------model dang ki-->
+<div class="container">
+                 <!-- Modal dang ki-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        	<div class="modal-header">
+          		<h4 class="modal-title" style="color:#2489ce;font-weight:bold;"><img src="../images/dangki.png" style="height:30px;padding-right:10px;">ĐĂNG KÍ THÀNH VIÊN</h4>
+        	</div>
+        
+        	<div class="modal-body">
+          		<form class="form-horizontal" action="/action_page.php" >
+                      <div class="form-group">
+                        	<label class="control-label col-sm-3" for="pwd">Họ Tên:</label>
+                        	<div class="col-sm-9"> 
+                          		<input type="textfeild" class="form-control" id="txthoten" placeholder="Enter Name">
+                                <span id="loi" style="color:#FF0004;"></span>
+                        	</div>
+                      </div>
+                      
+                  	  <div class="form-group"> 
+                            	<label class="control-label col-sm-3" for="pwd">Giới Tính:</label>
+                                <div class="col-sm-9"> 
+                                        <div class="radio">
+                                              <label><input type="radio" name="gioitinh" value="nam">Nam</label>
+                                              <label><input type="radio" name="gioitinh" value="nu" >Nữ</label>
+                                        </div>
+                                </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        	<label class="control-label col-sm-3" for="pwd">Ngày Sinh</label>
+                        	<div class="col-sm-3">
+                                  <select class="form-control" id="sel1">
+                                  		<script>
+                                        		for(var i=1;i<=31;i++){
+													document.write("<option>"+i+"</option>");
+												}
+                                        </script>
+                                  </select>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                  <select class="form-control" id="sel2">
+                                  		<script>
+                                        		for(var i=1;i<=12;i++){
+													document.write("<option>"+i+"</option>");
+												}
+                                        </script>
+                                  </select>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                  <select class="form-control" id="sel3">
+                                  		<script>
+                                        		for(var i=1900;i<=2018;i++){
+													document.write("<option>"+i+"</option>");
+												}
+                                        </script>
+                                  </select>
+                            </div>
+                                  
+                      </div>
+                      
+						<div class="form-group">
+               	  			<label class="control-label col-sm-3" for="email">Email:</label>
+                        		<div class="col-sm-9">
+                          			<input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    <span id="loi1" style="color:#F70004;"></span>
+                       			</div>
+                  		</div>
+                    
+                      <div class="form-group">
+                        	<label class="control-label col-sm-3" for="pwd">Password:</label>
+                        	<div class="col-sm-9"> 
+                          		<input type="password" class="form-control" id="pass1" placeholder="Enter password">
+                                <span id="loi2" style="color:#F70004;"></span>
+                        	</div>
+                      </div>
+                      
+                      <div class="form-group">
+                        	<label class="control-label col-sm-3" for="pwd">Nhập Lại Pass:</label>
+                        	<div class="col-sm-9"> 
+                          		<input type="password" class="form-control" id="pass2" placeholder="Enter password">
+                                <span id="loi3" style="color:#F70004;"></span>
+                        	</div>
+                      </div>
+                      
+                      <div class="form-group"> 
+                        	<div class="col-sm-offset-3 col-sm-9">
+
+                          		<div class="checkbox">
+                            		<label><input type="checkbox"> Remember me</label>
+                          		</div>
+                        	</div>
+                      </div>
+                      
+               </form>
+        	</div>
+        	
+            <div class="modal-footer" style="text-align:center;">
+          		<button id="btnhuydn" data-dismiss="modal" style="height:30px;width:50px;border-radius:5px;">Huỷ</button>
+                <button id="btndk" style="height:30px;width:100px;border-radius:5px;">Đăng Kí</button>
+        	</div>
+      </div>
+      
+    </div>
+  </div><!--dong model dang ki-->
+  
+</div>

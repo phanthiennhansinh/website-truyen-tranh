@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+@media all and (max-width: 500px) {
+	#dong{
+		display:none;
+	}
+	#mo{
+		display:block !important;
+	}
+}
+/*===================================HEADER*/
+/*header{
+	background-color:#2489ce;
+}*/
+header ul li a{
+	color:#FFFFFF;
+	
+}
+header ul li a:hover{
+	color:#FF0004;
+	border-radius:10px;
+	background-color:inherit !important;
+}
+/*=====================================NAV*/
+.navbar-inverse .navbar-nav>li>a {
+	color:#8F7676;
+}
+.dropdown-menu li a{
+	color:#333;
+}
+.dropdown-menu li{
+	width:120px;
+	padding-left:10px;
+	margin-bottom:5px;
+	height:30px;
+}
+.dropdown-menu li a:hover{
+	color:#FF0004;
+	font-weight:bold;
+	text-decoration:none;
+}
+/*=======================================SECTION bên phải */
+body{
+	background: #f2f2f2;
+}
+.navbar{
+	border:1px solid #A1A6AD;
+}
+.m1{
+	height:40px;
+	background: #444444;
+	padding-top:10px;
+	padding-left:20px;
+	font-weight:bold;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	color:#fff;	
+}
+#m2{
+	font-size:20px;	
+}
+.m4{		
+	background-color:#fff;	
+}
+.m4 a{
+	color:#000000;
+}
+.m4 a:hover{
+	background-color:#2489ce !important;
+	font-weight:bold;
+	color:#fff;
+}
+.todam{
+	font-weight:bold;
+	font-size:13px;
+}
+.todo{
+	color:#FF0004;
+	font-weight:bold;
+}
+/*================================================SECTION bên trái */
+/*lam mo anh============*/
+/*.lammoanh img {
+opacity: 1;
+}
+.lammoanh:hover img {
+opacity: 0.75;
+ }*/
+ /*===========================phong to anh*/
+ .lammoanh img{
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+margin: 0 10px 0px 0; /*margin between images*/
+}
+.lammoanh img:hover{
+-webkit-transform:scale(1.05); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(1.05); /*Mozilla scale version*/
+-o-transform:scale(1.05); /*Opera scale version*/
+
+}
+/*===================== ghi chu so luot xem va yeu thich*/
+
+/*.maintop-div2 {
+   position: relative;
+    /*width: 100%;
+    margin: 2%;
+    float: left;
+   margin-bottom: 10px;
+    box-shadow: 1px 1px 1px #888;
+	
+}*/
+.maintop-p2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    font-family: 'Arial';
+    margin-bottom: 5px;
+    z-index: 10;
+    max-height: 41px;
+    overflow: hidden;
+    line-height: 18px;
+	
+}	
+/*===========================dôi anh slide*/
+#doianh{
+	position:relative;
+}
+#prev{
+	text-transform:uppercase;
+	top:100px;
+	left:-20px;
+	position:absolute;
+}
+#next{
+	text-transform:uppercase;
+	top:100px;
+	right:-25px;
+	position:absolute;
+}
+/*==============================*/
+/*===============================mui tên đi lê*/
+#ScrollToTop{
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	right:3px;
+	cursor:pointer;
+	display:none;
+}
+/*=============================*/
+/*============================phân Trang tac gia*/
+ #doianh1{
+	position:relative;
+}
+#tacgiaprev{	
+}
+#tacgianext{
+}
+.pagination{
+	font-size:70%;
+	text-tr7nsform:uppercase;
+	top:85%;
+	left:40%;
+	position:absolute;	
+}
+@media all and (max-width: 500px) {
+	.pagination{
+   		top:85%;
+		left:25%;
+   }
+}
+.pagination li a{
+	border:1px solid #9C9C9C;
+	margin-right:5px;
+}
+/*================================*/
+/*============================phân Trang truyen*/
+#phantrangtruyen .pagination{
+	font-size:70%;
+	text-tr7nsform:uppercase;
+	top:95%;
+	left:40%;
+	position:absolute;	
+}
+@media all and (max-width: 500px) {
+	#phantrangtruyen .pagination{
+   		top:98%;
+		left:25%;
+   }
+}
+#phantrangtruyen .pagination li a{
+	border:1px solid #9C9C9C;
+	margin-right:5px;
+}
+/*==============================================*/
+/*===============================================css cho comment*/
+.detailBox {
+    width:80%px;
+    border:1px solid #bbb;
+    margin:10px;
+}
+.titleBox {
+    background-color:#2489ce;
+    padding:10px;
+}
+.titleBox label{
+  color:#fff;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
+/*==============================================*/
